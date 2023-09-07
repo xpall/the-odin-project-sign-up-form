@@ -6,17 +6,6 @@
   flex-direction: row; 
 }
 
-.left-bg {
-  height: 100%;
-  object-fit: cover;
-  min-width: 40%;
-}
-
-.left-pic {
-  flex-grow: 3;
-  flex-shrink: 1;
-}
-
 /* FORM BOX */
 
 .form-box {
@@ -61,8 +50,9 @@ div > input {
 /* RIGHT SIDE */
 
 .right-sign-up {
-  padding: 5% 0% 5% 0%;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .right-sign-up > .container{
@@ -96,4 +86,40 @@ div > input {
 
 .italicized {
   font-style: italic;
+}
+
+/* LEFT SIDE */
+
+.left-pic {
+  display: flex;
+  justify-content: center;
+}
+
+.left-bg {
+  height: 100%;
+  object-fit: cover;
+  min-width: 40%;
+}
+
+.left-pic {
+  min-width: 35%;
+  max-width: 35%;
+}
+
+.logo-text {
+  text-align: center;
+  position: relative;
+  bottom: 70%;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  font-size: 0.65rem;
+  position: absolute;
+  bottom: 0%;
+}
+
+.footer > p > a {
+  color: white;
 }
