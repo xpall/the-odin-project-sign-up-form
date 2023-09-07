@@ -1,0 +1,99 @@
+.main-container {
+  font-family: 'Roboto';
+  width: 100%;
+  height:max-content;
+  display: flex;
+  flex-direction: row; 
+}
+
+.left-bg {
+  height: 100%;
+  object-fit: cover;
+  min-width: 40%;
+}
+
+.left-pic {
+  flex-grow: 3;
+  flex-shrink: 1;
+}
+
+/* FORM BOX */
+
+.form-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-box label {
+  font-size: 0.60rem;
+  letter-spacing: 0.075rem;
+}
+
+.col1 {
+  margin-right: 10%;
+}
+
+/* BUTTONS AND BORDERS */
+.create-account {
+  font-size: .80rem;
+  font-weight: bolder;
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 180px;
+  height: 40px;
+  background-color: #596d48;
+  border-radius: 6px;
+  border-style: none;
+}
+
+.login {
+  text-decoration: none;
+  color: #596d48;
+  font-weight: 1000;
+}
+
+div > input {
+  border: none;
+  padding-left: 0.65rem;
+}
+
+/* RIGHT SIDE */
+
+.right-sign-up {
+  padding: 5% 0% 5% 0%;
+  min-height: 100vh;
+}
+
+.right-sign-up > .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 15%;
+  min-width: 60%;
+  flex-grow: 7;
+}
+
+/* RIGHT SIDE MARGINS */
+
+.intro-phrase,
+.lets,
+.form-box,
+.existing-account {
+  margin: 1rem 0rem;
+}
+
+.intro-phrase,
+.lets {
+  font-weight: bold;
+}
+
+.lets {
+  margin-top: 3rem;
+  margin-bottom: 0rem;
+}
+
+.italicized {
+  font-style: italic;
+}

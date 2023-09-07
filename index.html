@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
   <title>Sign-up Form</title>
@@ -10,56 +12,67 @@
 <body>
   <div class="main-container">
     <div class="left-pic">
-      <h1 class="logo-text">
-        DNIHS
-      </h1>
-      <div class="footer">
-        <p>
-          Photo by Dayap National IHS on DNIHS 
-        </p>
+      <div class="bg-image">
+        <!-- <img class="left-bg" src="images/dnihs_bg" alt="Picture of the school as background"> -->
+        <h1 class="logo-text">
+          DNIHS
+        </h1>
+        <div class="footer">
+          <p>
+            Photo by Dayap National Integrated High School on DNIHS 
+          </p>
+        </div>
       </div>
     </div>
     <div class="right-sign-up">
-      <p class="intro-phrase">
-        This is not a real online service!
-        You know you need something like this in your life
-        to help you realize your deepest dreams.
-        Sign up now to get started.
-        You know you want to.
-      </p>
-      <p class="lets">
-        Let's do this!
-      </p>
-      <div class="form-box">
-        <form action="/" method="post">
-          <div>
-            <label for="first_name">FIRST NAME</label>
-            <input type="text" name="first_name" id="first_name">
-          </div>
-          <label for="last_name">LAST NAME</label>
-          <input type="text" name="last_name" id="last_name">
-          <div>
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email">
-          </div>
-          <div>
-            <label for="phone_num">PHONE NUMBER</label>
-            <input type="tel" name="phone_num" id="phone_num">
-          </div>
-          <div>
-            <label for="passwd">PASSWORD</label>
-            <input type="password" name="passwd" id="passwd">
-          </div>
-          <div>
-            <label for="passwd2">CONFIRM PASSWORD</label>
-            <input type="password" name="passwd2" id="passwd2">
-          </div>
-          <button type="submit">Create Account</button>
-        </form>
+      <div class="container">
+        <p class="intro-phrase">
+          This is not a real online service!
+          You know you need something like this in your life
+          to help you realize your deepest dreams.
+          <br>Sign up <span class="italicized">now</span> to get started.
+        </p>
+        <p class="intro-phrase">
+          You <span class="italicized">know</span> you want to.
+        </p>
+        <p class="lets">
+          Let's do this!
+        </p>
+        <form id="register" action="/" method="post">
+          <div class="form-box">
+            <div class="col1">
+              <div>
+                <label for="first_name">FIRST NAME</label>
+                <input type="text" name="first_name" id="first_name">
+              </div>
+              <div>
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email">
+              </div>
+              <div>
+                <label for="passwd">PASSWORD</label>
+                <input type="password" name="passwd" id="passwd">
+              </div>
+            </div>
+            <div class="col2">
+              <label for="last_name">LAST NAME</label>
+              <input type="text" name="last_name" id="last_name">
+              <div>
+                <label for="phone_num">PHONE NUMBER</label>
+                <input type="tel" name="phone_num" id="phone_num">
+              </div>
+              <div>
+                <label for="passwd2">CONFIRM PASSWORD</label>
+                <input type="password" name="passwd2" id="passwd2">
+              </div>
+            </div>
+          </form>
+        </div>
+        <button class="create-account" type="submit" form="register">Create Account</button>
+        <p class="existing-account">
+          Already have an account? <a class="login" href="/index.html">Log in</a>
+        </p>
       </div>
-      <p class="existing-account">
-        Already have an account? <a href="/index.html">Log in</a>
-      </p>
     </div>
   </div> 
 </body>
