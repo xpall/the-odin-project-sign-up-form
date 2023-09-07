@@ -8,6 +8,59 @@
   <title>Sign-up Form</title>
 </head>
 <body>
-  
+  <div class="main-container">
+    <div class="left-pic">
+      <h1 class="logo-text">
+        DNIHS
+      </h1>
+      <div class="footer">
+        <p>
+          Photo by Dayap National IHS on DNIHS 
+        </p>
+      </div>
+    </div>
+    <div class="right-sign-up">
+      <p class="intro-phrase">
+        This is not a real online service!
+        You know you need something like this in your life
+        to help you realize your deepest dreams.
+        Sign up now to get started.
+        You know you want to.
+      </p>
+      <p class="lets">
+        Let's do this!
+      </p>
+      <div class="form-box">
+        <form action="/" method="post">
+          <div>
+            <label for="first_name">FIRST NAME</label>
+            <input type="text" name="first_name" id="first_name">
+          </div>
+          <label for="last_name">LAST NAME</label>
+          <input type="text" name="last_name" id="last_name">
+          <div>
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div>
+            <label for="phone_num">PHONE NUMBER</label>
+            <input type="tel" name="phone_num" id="phone_num">
+          </div>
+          <div>
+            <label for="passwd">PASSWORD</label>
+            <input type="password" name="passwd" id="passwd">
+          </div>
+          <div>
+            <label for="passwd2">CONFIRM PASSWORD</label>
+            <input type="password" name="passwd2" id="passwd2">
+          </div>
+          <button type="submit">Create Account</button>
+        </form>
+      </div>
+      <p class="existing-account">
+        Already have an account? <a href="/index.html">Log in</a>
+      </p>
+    </div>
+  </div> 
 </body>
 </html>
