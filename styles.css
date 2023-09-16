@@ -54,6 +54,8 @@ div > input {
 
 .col1 > div,
 .col2 > div {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
 }

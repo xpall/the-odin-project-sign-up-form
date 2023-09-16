@@ -6,6 +6,7 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="error_styles.css">
   <script src="script.js" defer></script>
   <title>Sign-up Form</title>
 </head>
@@ -46,31 +47,38 @@
               <div class="col1">
                 <div>
                   <label for="first_name">FIRST NAME</label>
-                  <input type="text" name="first_name" id="first_name">
+                  <input type="text" name="first_name" id="first_name" required>
+                  <p class="error first_name-error"></p>
                 </div>
                 <div>
                   <label for="email">EMAIL</label>
-                  <input type="email" name="email" id="email">
+                  <input type="email" name="email" id="email" required>
+                  <p class="error email-error"></p>
                 </div>
                 <div>
                   <label for="passwd">PASSWORD</label>
-                  <input type="password" name="passwd" id="passwd">
+                  <input type="password" name="passwd" id="passwd" required minlength="8" maxlength="20">
+                  <p class="error passwd-error"></p>
                 </div>
               </div>
               <div class="col2">
                 <div>
                   <label for="last_name">LAST NAME</label>
-                  <input type="text" name="last_name" id="last_name">
+                  <input type="text" name="last_name" id="last_name" required>
+                  <p class="error last_name-error"></p>
                 </div>
                 <div>
                   <label for="phone_num">PHONE NUMBER</label>
-                  <input type="tel" name="phone_num" id="phone_num">
+                  <input type="tel" name="phone_num" id="phone_num" required pattern="\d{7, 11}">
+                  <p class="error phone_num-error"></p>
                 </div>
                 <div>
                   <label for="passwd2">CONFIRM PASSWORD</label>
-                  <input type="password" name="passwd2" id="passwd2">
+                  <input type="password" name="passwd2" id="passwd2" required>
+                  <p class="error passwd2-error"></p>
                 </div>
               </div>
+              <p class="error form-error"></p>
             </form>
           </div>
         </div>

@@ -1,0 +1,15 @@
+--error-border: ;
+
+#first_name {
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.error-status {
+  content: 'Enter a valid name';
+  display: block;
+  color: red;
+  font-size: 0.5rem;
+}
+
+
